@@ -1,0 +1,114 @@
+<head>
+    <title> Complaint Registration </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="css/slider.css">
+</head>
+<style>
+.navbar {
+width: 100%;
+background-color: #313348;
+overflow: auto;
+}
+
+.navbar a {
+float: left;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background-color:#FE9800;
+}
+
+.active {
+background-color: #FE9800;
+}
+.form-control{
+    text-align: center;
+    color:goldenrod;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+float: none;
+display: block;
+}
+
+}
+</style>
+<body>
+<div class="navbar">
+<a  href="home.php"><i class="fa fa-fw fa-home"></i> Home</a>  
+<a class="active" href="profile.jsp"><i class="fa fa-fw fa-user"></i> Raise Complaint</a>
+<a href="index.html" style="float: right;"><i class="fa fa-sign-out"></i>Logout</a>
+</div>
+
+<div class="card" style="margin-top:20px;">
+<center><h1 style="color: tomato;"><b>Register Complaint</b></h2></center>
+<form action="InsertPost" method="post" class="w3-container">       
+        Select Your District <br><select class="form-control" id="inputState">
+            <option value="SelectState">Select State</option>
+            <option value="Ariyalur"> Ariyalur </option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Dharmapuri">Dharmapuri</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Erode">Erode</option>
+            <option value="Kallakurichi">Kallakurichi</option>
+            <option value="Kancheepuram">Kancheepuram</option>
+            <option value="Karur">Karur</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Mayiladuthurai">Mayiladuthurai</option>
+            <option value="Nagapatinnam">Nagapatinnam</option>
+            <option value="Nagercoil">Nagercoil</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Perambulur">Perambulur</option>
+            <option value="Pudukottai">Pudukottai</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Salem">Salem</option>
+            <option value="Sivagangai">Sivagangai</option>
+            <option value="Tenkasi">Tenkasi</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Theni">Theni</option>
+            <option value="Thiruvallur">Thiruvallur</option>
+            <option value="Thiruvarur">Thiruvarur</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Trichy">Trichy</option>
+            <option value="Tirupattur">Tirupattur</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Thiruvannamalai">Thiruvannamalai</option>
+            <option value="Ooty">Ooty</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Viluppuram">Viluppuram</option>
+            <option value="Virudhunagar">Virudhunagar</option>
+          </select><br/> 
+          <br>
+        Select Your Department<br>
+        <select class="form-control" id="inputState">
+            <option value="SelectState">Select State</option>
+            <option value="Electrical Department "> Electrical Department </option>
+            <option value="Water Department"> Water Department</option>
+            <option value="Road Department"> Road Department</option>
+            <option value="Waste Disposal Department">Waste Disposal Department</option>
+        </select><br>
+        <br>	
+        Complaint Description
+        <br><br>
+        <textarea id="subject" name="descr" placeholder="Write something.." style="height:200px; width:100%;resize: vertical;" required></textarea>
+        <hr>
+        <input type="submit" class="button btn-theme" value="Submit Complaint"/> 
+    </form>
+</div>
+</body>
+</html>

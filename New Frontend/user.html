@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+        <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+        <title> Public User Login</title>
+        <link href="/muni1.css" rel="stylesheet">
+        <script type="text/javascript">
+            function valid()
+            {
+             if(document.forgot.password.value!= document.forgot.confirmpassword.value)
+            {
+            alert("Password and Confirm Password Field do not match  !!");
+            document.forgot.confirmpassword.focus();
+            return false;
+            }
+            return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="login-page">
+            <div class="container">
+                <form class="form-login" name="login" method="post"><br><br><br><br>
+                    <div style="text-align: center"><h1 style="font-size: 40px;color: tomato;">User Login</h2></div>
+                        <br><br><br>
+                    <div class="login-wrap">
+                        <input type="email" name="email" placeholder="Email ID" pattern=".+@gmail\.com" autocomplete="off" class="form-control" required><br >
+                        <input type="password" class="form-control" name="password" minlength="6" required placeholder="Password">
+                        <label class="checkbox">
+                        <span class="pull-right"><br>
+                            <div style="text-align: center">
+                                <a href="muni4.html" > Forgot Password?</a><br><br>
+                            </div>
+                        </span>
+                        </label>
+                        <div style="text-align:center">
+                            <a href="/viewcomplaint.html"><button class="btn btn-theme btn-block" name="submit" type="submit" ><i class="fa fa-lock"></i> SIGN IN</button></a>
+                        </div>
+                </form>
+                <div style="margin: 50px; text-align: center;font-size: 110%;">
+                    Don't have an account yet?<br><br>
+                    <a class="" href="/accountcreation.html">Create an account</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation </title>
+    <link href="/muni1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="a">
+    <form class="form-login" name="forgot" method="post">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h4 class="modal-title">New Account Registration</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your details below to Create a new account.</p>
+                    <input type="name" name="name" placeholder="Name" autocomplete="off" class="form-control" required><br>
+                    <input type="date" name="dob" placeholder="Date of Birth" autocomplete="off" class="form-control" required><br>
+                    <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
+                    <input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
+                    <input type="text" name="address" placeholder="Address" autocomplete="off" class="form-control" required><br>
+                    <input type="password" class="form-control" placeholder="Password" id="password" name="password"  required ><br />
+                    <input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword name="confirmpassword" required >
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                    <button class="btn btn-theme" type="submit" name="change" onclick="return valid();">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>

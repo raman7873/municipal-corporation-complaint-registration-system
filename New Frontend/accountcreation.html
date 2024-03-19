@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation </title>
+    <link href="/muni1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a  href="/user.html"><i class="fa fa-fw fa-home"></i> User Login Page </a> 
+    </div>
+    <div class="a">
+    <form class="form-login" name="forgot" method="post">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h4 class="modal-title">New Account Registration</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your details below to Create a new account.</p>
+                    <input type="name" name="name" placeholder="Name" autocomplete="off" class="form-control" required><br>
+                    <input type="email" name="email" placeholder="Email ID" pattern=".+@gmail\.com" autocomplete="off" class="form-control" required><br >
+                    <input type="text" name="contact" placeholder="Contact Number" maxlength="10" minlength="10" autocomplete="off" class="form-control" required><br>
+                    <input type="text" name="address" placeholder="Address" autocomplete="off" class="form-control" required><br>
+                    <input type="password" class="form-control" placeholder="Password"  minlength="6" id="password" name="password"  required ><br />
+                    <input type="password" class="form-control unicase-form-control text-input" minlength="6" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-theme" type="submit" name="change" onclick="return valid();">Submit</button>
+                </div>
+                <button class="btn btn-theme" type="submit"
+            </div>
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>
